@@ -1,0 +1,230 @@
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #111216;
+  color: #f5f5f5;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.main-header {
+  background: #212425;
+  padding: 18px 8px 10px 8px;
+  text-align: center;
+}
+.main-header h1 {
+  font-size: 1.4rem;
+  margin: 0 0 8px 0;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.quote-btn {
+  background: #3747e0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  width: 90%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 auto 10px auto;
+  display: block;
+  box-shadow: 0 2px 8px rgba(55,55,224,0.08);
+}
+.quote-btn:active, .quote-btn:focus {
+  background: #23272b;
+}
+
+.logo-img {
+  width: 60vw;
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 18px auto 0 auto;
+}
+
+.parallax-section {
+  width: 100vw;
+  height: 80px;
+  background-image: url('Carroll-Image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 0 18px 0;
+}
+
+.scroll-to-about-btn {
+  background: #212425;
+  color: #a8a8a8;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  width: 90%;
+  margin: 0 auto 18px auto;
+  display: block;
+}
+
+.about-section {
+  margin: 0 auto 18px auto;
+  padding: 0 4vw;
+  max-width: 98vw;
+}
+.about-section h6, .about-text {
+  font-size: 1.1rem;
+  color: #fff;
+  background: rgba(0,0,0,0.4);
+  border-radius: 8px;
+  padding: 14px 10px;
+  text-align: center;
+  margin: 0 auto 12px auto;
+  font-weight: 400;
+  max-width: 98vw;
+  position: static !important;
+}
+
+.services-offered {
+  margin: 0 auto 18px auto;
+  padding: 0 4vw 18px 4vw;
+  max-width: 98vw;
+}
+.services-offered h7, .services-title {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 600;
+  position: static !important;
+}
+.services-offered h8, .services-desc {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 400;
+  position: static !important;
+}
+.services-offered ul, .services-list {
+  font-size: 0.98rem;
+  color: #f5f5f5;
+  padding-left: 18px;
+  margin: 0 auto;
+  max-width: 95vw;
+  text-align: left;
+  position: static !important;
+}
+.services-offered li {
+  margin-bottom: 8px;
+}
+
+.outside-image, .hero-header-img {
+  width: 60vw;
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 18px auto 0 auto;
+  position: static !important;
+}
+.hero-logo, h12 {
+  text-align: center;
+  margin: 18px 0 0 0;
+  font-size: 1.1rem;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  position: static !important;
+}
+.hero-logo img {
+  width: 40vw;
+  max-width: 120px;
+  height: auto;
+  display: inline-block;
+}
+
+.footer {
+  width: 100vw;
+  background: #212425;
+  color: #fff;
+  text-align: center;
+  padding: 18px 4vw 10px 4vw;
+  font-size: 0.95rem;
+  margin-top: 30px;
+}
+.footer a {
+  color: #a8a8a8;
+  text-decoration: underline;
+}
+.footer a:active, .footer a:focus {
+  color: #fff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background: #fff;
+  margin: 10vh auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 95vw;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(55,55,224,0.15);
+  position: relative;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 20px 0 0;
+  cursor: pointer;
+}
+.close:active, .close:focus {
+  color: #3747e0;
+}
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Utility: Remove all absolute/fixed positioning from content */
+h6, h7, h8, h12, ul, #services-offered {
+  position: static !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+@media (max-width: 400px) {
+  html, body {
+    font-size: 15px;
+  }
+  .logo-img, .outside-image, .hero-header-img {
+    max-width: 120px;
+  }
+  .hero-logo img {
+    max-width: 80px;
+  }
+}
