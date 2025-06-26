@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        if (window.innerWidth <= 800 || /Mobi|Android/i.test(navigator.userAgent)) {
+          link.href = 'styles2.css';
+        } else {
+          link.href = 'styles.css';
+        }
+        document.head.appendChild(link);
+        </script>
+    
+
+    
+    </head>
+<body>
+    <header class="main-header">
+         <img src="CBlogo.png" class="logo-img" alt="Carroll Biomedical Logo">
+         <img src="Header.png" class="outside-image fade-header" alt="Header Image">
+         <button id="openQuoteModal" class="quote-btn">Request a Quote</button>
+    </header>
+
+    <div class="parallax-section"></div>
+
+</h3>
+<button class="scroll-to-about-btn" onclick="document.getElementById('services-offered').scrollIntoView({behavior: 'smooth'});">Services Offered</button>
+
+<div style="height: 200px;"></div>
+<section id="about-section">
+  <h6 style=" font-size: 2.2rem; position:absolute; top:400px; left:10px ;color: rgb(255, 255, 255);background-color:rgba(0,0,0,0.4)">
+      <p> Based in Cleveland, OH, at Carroll Biomedical we provide consulting services to help neuromodulation companies bring medical devices to market. With extensive experience in active implantable devices, we understand each client’s needs and deliver the design services necessary for product quality and success. We treat every project as our own, prioritizing patient safety and satisfaction.</p>
+  </h6>
+</section>
+<div style="position: absolute; top:1200px;" id="services-offered">
+<h7> <p><b> Services offered at Carroll Biomedical
+</b></p></h7>
+<h8> <p> At Carroll Biomedical we are highly flexible in how we can engage with clients. On one end of the spectrum, we can act in an advisory role by providing guidance and advice to clients that might not have experience in a particular area. On the other end of the spectrum, we can perform low-level design tasks for clients that do not have the necessary technical resources in-house. <br> <br> <b>Some ways that we can assist:</b></br></p></h8>
+<ul> 
+    <li> Developing detailed specifications for our clients’ medical systems and devices</li>
+    <li> Creating system architectures for primary-cell, rechargeable, or RF-powered devices that include all necessary safety features</li>
+    <li> Providing state-of-the-art hardware and software designs based on careful risk analysis and mitigation</li>
+    <li> Developing ASIC architectures and working with ASIC design teams from initial concept through final acceptance testing</li>
+    <li> Ensuring the development of our client's intellectual property</li>
+    <li> Performing verification and validation testing with full traceability</li>
+    <li> Establishing relationships between our clients and suppliers of implant-grade components</li>
+    <li> Ensuring a smooth transfer from design to production</li>
+    <li> Assisting with the preparation of documentation for regulatory submission</li>
+</ul> </div>
+<h12 style="color: aliceblue; position:absolute;
+top: 200px; right:700px; font-size: 3.0rem; font-family: 'Courier New', Courier, monospace;"> </h12>
+<div id="quoteModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeQuoteModal">&times;</span>
+    <iframe src="quote-form.html" frameborder="0" style="width:100%;height:600px;"></iframe>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-text">
+    <p>&copy; 2025 Carroll Biomedical. All rights reserved.</p>
+    <p>Contact: <a href="mailto:jweisgarber@carrollbiomedical.com">jweisgarber@carrollbiomedical.com</a> | 740-491-7943</p>
+    <p>8001 Sweet Valley Dr., Suite 1, Valley View, OH 44125</p>
+  </div>
+</footer>
+
+<script>
+
+const modal = document.getElementById('quoteModal');
+const openBtn = document.getElementById('openQuoteModal');
+const closeBtn = document.getElementById('closeQuoteModal');
+openBtn.onclick = function() { modal.style.display = 'block'; }
+closeBtn.onclick = function() { modal.style.display = 'none'; }
+window.onclick = function(event) { if (event.target == modal) { modal.style.display = 'none'; } }
+</script>
+</body>
+</html>
