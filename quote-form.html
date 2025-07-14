@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        if (window.innerWidth <= 800 || /Mobi|Android/i.test(navigator.userAgent)) {
+          link.href = 'styles2.css';
+        } else {
+          link.href = 'styles.css';
+        }
+        document.head.appendChild(link);
+        </script>
+    <title>Request a Quote - Carroll Biomedical</title>
+</head>
+<body>
+    <header class="form-header">    </header>
+    <main>
+        <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="abfc7e46-aa23-46cc-9366-c239cc2fe99d">
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <fieldset>
+                <img src="CBlogo.png" class="form-img" height="70" width="200">
+                <legend>Request a quote</legend>
+                <p>Name: <input type="text" name="name" size="40" required></p>
+                <p>Email Address: <input type="email" name="email" size="40" required></p>
+                <p>Phone Number: <input type="text" name="phone" size="40"></p>
+                <p>Quick summary of services requested: <input type="text" name="summary" size="80"></p>
+                <p class="button">
+                    <button type="submit">Submit</button>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
