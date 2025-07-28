@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        if (window.innerWidth <= 800 || /Mobi|Android/i.test(navigator.userAgent)) {
+          link.href = 'styles.css';
+        } else {
+          link.href = 'styles.css';
+        }
+        document.head.appendChild(link);
+        </script>
+    
+
+    
+    </head>
+<body>
+    <header class="main-header">
+         <img src="CBlogo.png" class="logo-img" alt="Carroll Biomedical Logo">
+         <img src="Header.png" class="outside-image fade-header" alt="Header Image">
+         <button id="openQuoteModal" class="quote-btn">Request a Quote</button>
+    </header>
+
+    <div class="parallax-section"></div>
+
+</h3>
+<button class="scroll-to-about-btn" onclick="document.getElementById('Contacted').scrollIntoView({behavior: 'smooth'});">Contact Us</button>
+
+<div style="height: 10.2vw;"></div>
+<div class="Front-Container">
+<section id="about-section">
+  <h6 style=" font-size: 1.83vw;color: rgb(0, 0, 0);background-color:rgba(0,0,0,0)">
+    <p> Neural Stimulation and Recording device design Consultants</p> </h6>
+      <img src="CBlogo.png" class="Front-Logo">
+      </section>
+      <img src="Filler-Image.png" class="Outside-Front-img">
+   </div>
+  <div class="Second-Container"> 
+    <div class="pill-text">
+    <p> The Celero Pill is an ingestable device that was developed here at Carroll Biomedical</p>
+    </div>
+    <img src="Filler-Image.png" class="CAD-Image3">
+  </div>
+
+<div id="services-offered" class="services-offered">
+<h7> <p> FDA Class II and Class III Device Design</p></h7>
+<ul class="ul3">
+    <li>Implantable devices</li>
+    <li>Injectable devices</li>
+    <li>Ingestable devices</li>
+    <li>Wearable devices</li>
+</ul> </div> </div>
+<h12 style="color: aliceblue; position:absolute;
+top: 200px; right:700px; font-size: 3.0rem; font-family: 'Courier New', Courier, monospace;"> </h12>
+<div id="quoteModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeQuoteModal">&times;</span>
+    <iframe src="quote-form.html" frameborder="0" style="width:100%;height:600px;"></iframe>
+  </div>
+</div>
+<div class="Container3">
+  <div class="Cont3-Text">
+    <p> Your design partner from Concept to Clinical Launch</p>
+  </div>
+  <img src="Filler-Image.png" class="CAD-Main-IMG" alt="CAD Image">
+  <img src="Filler-Image.png" class="PCBA-Main-IMG" alt="PCBA Image">
+  <img src="Filler-Image.png" class="Prototype-Main-IMG" alt="Prototype Image">
+  <img src="ArrowIMG.png" class="Arrow-1">  
+  <img src="ArrowIMG.png" class="Arrow-2"> 
+  <p class="Design"> Design</p> 
+  <p class="Assemble"> Assemble</p>
+  <p class="Prototype"> Prototype</p>
+
+</div>
+
+
+<footer class="footer">
+  <div class="footer-text" id="Contacted">
+    <p>&copy; 2025 Carroll Biomedical. All rights reserved.</p>
+    <p>Contact: <a href="mailto:jweisgarber@carrollbiomedical.com">jweisgarber@carrollbiomedical.com</a> | 740-491-7943</p>
+    <p>8001 Sweet Valley Dr., Suite 1, Valley View, OH 44125</p>
+    <img src="Image_3.jpg" class="Footer-Image" alt="Footer Image">
+    </div>
+  </div>
+</footer>
+
+<script>
+
+const modal = document.getElementById('quoteModal');
+const openBtn = document.getElementById('openQuoteModal');
+const closeBtn = document.getElementById('closeQuoteModal');
+openBtn.onclick = function() { modal.style.display = 'block'; }
+closeBtn.onclick = function() { modal.style.display = 'none'; }
+window.onclick = function(event) { if (event.target == modal) { modal.style.display = 'none'; } }
+</script>
+</body>
+</html>
